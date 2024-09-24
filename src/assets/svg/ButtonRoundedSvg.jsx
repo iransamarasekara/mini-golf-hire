@@ -7,8 +7,8 @@ const ButtonRoundedSvg = (white) => (
       viewBox="0 0 21 44"
     >
       <path
-        fill={white ? "white" : "none"}
-        stroke={white ? "white" : "url(#btn-left)"}
+        fill={white ? "white" : "#0e7a31"}
+        stroke={white ? "white" : "#0e7a31"}
         strokeWidth="2"
         d="M21,43.00005 
              L10,43.00005 
@@ -23,7 +23,7 @@ const ButtonRoundedSvg = (white) => (
       height="44"
       viewBox="0 0 100 44"
       preserveAspectRatio="none"
-      fill={white ? "white" : "none"}
+      fill={white ? "white" : "#0e7a31"}
     >
       {white ? (
         <polygon
@@ -34,14 +34,14 @@ const ButtonRoundedSvg = (white) => (
       ) : (
         <>
           <polygon
-            fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
+            fill="#0e7a31" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 42 100 44 0 44 0 42"
+            points="100 0 100 44 0 44 0 0"
           />
           <polygon
-            fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
+            fill="#0e7a31" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 0 100 2 0 2 0 0"
+            points="100 0 100 44 0 44 0 0"
           />
         </>
       )}
@@ -53,8 +53,8 @@ const ButtonRoundedSvg = (white) => (
       viewBox="0 0 21 44"
     >
       <path
-        fill={white ? "white" : "none"}
-        stroke={white ? "white" : "url(#btn-right)"}
+        fill={white ? "white" : "#0e7a31"}
+        stroke={white ? "white" : "#0e7a31"}
         strokeWidth="2"
         d="M0,43.00005 
              L10,43.00005 

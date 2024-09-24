@@ -31,8 +31,8 @@ const Header = () => {
   return (
     <div className="flex justify-center items-center">
       <div
-        className={`fixed top-0 w-[90%] lg:w-[80%] mx-auto z-50 border mt-2 border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm rounded-lg ${
-          openNavigation ? "bg-n-8" : "bg-n-8/90 lg:backdrop-blur-sm"
+        className={`fixed top-0 w-[90%] lg:w-[80%] mx-auto z-50 border mt-2 border-n-6 lg:bg-n-1 lg:backdrop-blur-sm rounded-lg ${
+          openNavigation ? "bg-n-1" : "bg-n-1 lg:backdrop-blur-sm"
         }`}
       >
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -43,7 +43,7 @@ const Header = () => {
           <nav
             className={`${
               openNavigation ? "flex" : "hidden"
-            } fixed top-[7rem] bottom-[2rem] left-[5%] right-[5%] rounded-lg bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+            } fixed top-[7rem] bottom-[2rem] left-[5%] right-[5%] rounded-lg bg-n-1 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
           >
             <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
               {navigation.map((item) => (
@@ -51,13 +51,13 @@ const Header = () => {
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl text-n-1 transition-colors hover:text-color-1 ${
+                  className={`block relative font-code text-2xl text-n-8 transition-colors hover:text-n-14 ${
                     item.onlyMobile ? "lg:hidden" : ""
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                     item.url === pathname.pathname
-                      ? "z-2 lg:text-n-1"
-                      : "lg:text-n-1/50"
-                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                      ? "z-2 lg:text-n-8"
+                      : "lg:text-n-8/50"
+                  } lg:leading-5 lg:hover:text-n-14 xl:px-12`}
                 >
                   {item.title}
                 </a>
@@ -66,7 +66,7 @@ const Header = () => {
             <HamburgerMenu />
           </nav>
 
-          <RoundButton className="hidden lg:flex" href="/booknow">
+          <RoundButton className="hidden lg:flex text-n-8" href="/booknow">
             Book Now
           </RoundButton>
 

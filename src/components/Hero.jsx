@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { heroBackground, robot } from "../assets";
+import { heroBackground, golfPlayer } from "../assets";
 import RoundButton from "../components/RoundButton";
 import {
   BackgroundCircles,
@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div className="relative bg-n-4 h-[50rem]" ref={parallaxRef}>
       <img
-        src={robot}
+        src={golfPlayer}
         className="absolute w-full h-full lg:max-w-[40rem] xl:max-w-[50rem] right-0 z-0 object-cover object-top"
       />
       <div className="relative pt-[5rem] z-1 mx-[5%] lg:mx-[10%]">
