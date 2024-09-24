@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { brainwave } from "../assets";
+import { logo } from "../assets";
 import { navigation } from "../constants";
 import RoundButton from "./RoundButton";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -41,7 +41,7 @@ const Header = () => {
       >
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[12rem] xl:mr-8" href="/">
-            <img src={brainwave} width={190} height={40} alt="mini-golf-hire" />
+            <img src={logo} width={190} height={10} alt="mini-golf-hire" />
           </a>
 
           <nav
@@ -79,7 +79,10 @@ const Header = () => {
             <HamburgerMenu />
           </nav>
 
-          <RoundButton className="hidden lg:flex text-n-8" href="/booknow">
+          <RoundButton
+            className="hidden lg:flex text-n-8 hover:text-n-1"
+            href="/booknow"
+          >
             Book Now
           </RoundButton>
 

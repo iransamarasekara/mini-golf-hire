@@ -24,8 +24,10 @@ const Hero = () => {
           <p className="text-2xl text-n-8">Come to us for the Portable Mini Golf Experience in Australia!</p>
         </div>
         <div className="relative flex gap-10">
-          <RoundButton href="">Get Started</RoundButton>
-          <RoundButton href="" white>
+          <RoundButton href="" className="text-n-8 hover:text-n-1">
+            Get Started
+          </RoundButton>
+          <RoundButton href="" white className="text-n-8 hover:text-n-14">
             Call
           </RoundButton>
           <div className="relative z-1 -right-[4rem] mx-[5%] lg:mx-[10%]">
