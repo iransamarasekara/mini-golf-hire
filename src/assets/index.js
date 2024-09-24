@@ -24,6 +24,7 @@ import background from "./background.jpg";
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
+import golfPlayer from "./hero/golfPlayer.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -100,6 +101,7 @@ export {
   background,
   curve,
   robot,
+  golfPlayer,
   heroBackground,
   curve1,
   curve2,
