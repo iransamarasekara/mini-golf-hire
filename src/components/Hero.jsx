@@ -19,8 +19,9 @@ const Hero = () => {
       />
       <div className="relative pt-[5rem] z-1 mx-[5%] lg:mx-[10%]">
         <div className="max-w-[40rem] mt-[2rem] pt-[7.25rem] pb-10">
-          <h1 className="text-6xl text-n-8">Welcome to our website</h1>
-          <p className="text-2xl text-n-8">We are here to help you</p>
+          <p className="text-2xl text-green-800">Only hire the original and the best of</p>
+          <h1 className="text-6xl text-n-8">PORTABLE mini golf</h1>
+          <p className="text-2xl text-n-8">Come to us for the Portable Mini Golf Experience in Australia!</p>
         </div>
         <div className="relative flex gap-10">
           <RoundButton href="">Get Started</RoundButton>
@@ -31,7 +32,7 @@ const Hero = () => {
             <ScrollParallax isAbsolutelyPositioned>
               <PopupButton
                 className="hidden absolute w-[18rem] lg:flex "
-                title="Code generation"
+                title="Book Now"
               />
             </ScrollParallax>
           </div>

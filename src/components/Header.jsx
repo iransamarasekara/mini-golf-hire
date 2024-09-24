@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div className="flex justify-center items-center">
       <div
-        className={`fixed top-0 w-[90%] lg:w-[80%] mx-auto z-50 border mt-2 border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm rounded-lg ${
+        className={`fixed top-0 w-[90%] lg:w-[80%] mx-auto z-50 border mt-2 border-n-6 lg:bg-n-1 lg:backdrop-blur-sm rounded-lg ${
           openNavigation ? "bg-n-8" : "bg-n-8/90 lg:backdrop-blur-sm"
         }`}
       >
@@ -51,11 +51,11 @@ const Header = () => {
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl text-n-1 transition-colors hover:text-color-1 ${
+                  className={`block relative font-code text-2xl text-n-8 transition-colors hover:text-color-1 ${
                     item.onlyMobile ? "lg:hidden" : ""
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                     item.url === pathname.pathname
-                      ? "z-2 lg:text-n-1"
+                      ? "z-2 lg:text-n-8"
                       : "lg:text-n-1/50"
                   } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 >
