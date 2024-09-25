@@ -19,9 +19,13 @@ const Hero = () => {
           <p className=" text-green-800 text-xl font-semibold">
             Only hire the original and the best of
           </p>
-          <h1 className="text-6xl text-n-5 font-bold pt-6">PORTABLE <br/>mini golf</h1>
+          <h1 className="text-6xl text-n-5 font-bold pt-6">
+            PORTABLE <br />
+            mini golf
+          </h1>
           <p className="text-xl text-n-5 pt-5">
-            Come to us for the Portable Mini Golf<br/> Experience in Australia!
+            Come to us for the Portable Mini Golf
+            <br /> Experience in Australia!
           </p>
         </div>
         <div className="relative flex gap-10">
@@ -44,25 +48,26 @@ const Hero = () => {
       <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 mt-[7.25rem]">
         <BackgroundCircles />
       </div>
-      <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
-  <ul className="gap-8 hidden md:flex w-full justify-center items-center">
-    {heroIcons.map((icon, index) => (
-      <li key={index} className="bg-n-1 justify-center items-center w-full shadow-md">
-        <img
-          src={icon.iconUrl}
-          className="object-cover w-15 h-15 "
-        />
-        <div className="top-10 left-10 w-full h-full bg-n-1 opacity-0"></div>
-        <div className="flex items-center justify-center p-2">
-          <span className="text-n-4 text-base font-normal items-center">
-            {icon.text}
-          </span>
-        </div>
-        
-      </li>
-    ))}
-  </ul>
-</div>
+      <div className="relative mx-[5%] lg:mx-[10%] pt-[3rem] lg:pt-[2.5rem]">
+        <ul className="gap-8 hidden md:flex w-full">
+          {heroIcons.map((icon, index) => (
+            <li
+              key={index}
+              className="bg-n-1 items-center w-full shadow-md flex flex-col rounded-lg"
+            >
+              <img src={icon.iconUrl} className="object-cover w-15 h-15 mt-4" />
+              <h5 className="text-n-8 text-base font-bold items-center mt-2">
+                {icon.title}
+              </h5>
+              <div className="flex items-center justify-center p-2">
+                <span className="text-n-4 text-base font-normal items-center text-center">
+                  {icon.text}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
