@@ -30,6 +30,10 @@ import {
   telegram,
   twitter,
   yourlogo,
+  portable,
+  qulity,
+  fun,
+  aforadble,
 } from "../assets";
 
 export const navigation = [
@@ -61,7 +65,31 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const heroIcons = [{
+  id: "portable",
+  title: "Portable",
+  text: "Our mini golf courses are portable and can be set up anywhere.",
+  iconUrl: portable},
+
+  {
+  id: "quality",
+  title: "Quality",
+  text: "We only use high-quality equipment and materials for our courses.",
+  iconUrl: qulity},
+
+  {
+
+  id: "fun",
+  title: "Fun",
+  text: "Our courses are designed to be fun and engaging for all ages.",
+  iconUrl: fun},
+
+  {
+
+  id: "affordable",
+  title: "Affordable",
+  text: "We offer competitive prices for our mini golf courses.",
+  iconUrl: aforadble}];
 
 export const notificationImages = [notification4, notification3, notification2];
 
@@ -80,7 +108,6 @@ export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 //   chromecast,
 //   sliders04,
 // ];
-
 export const collabText =
   "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
