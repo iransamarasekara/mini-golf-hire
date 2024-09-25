@@ -1,27 +1,28 @@
 import { useRef } from "react";
-import { heroBackground, golfPlayer } from "../assets";
+import { golfPlayer, golfbg } from "../assets";
 import RoundButton from "../components/RoundButton";
-import {
-  BackgroundCircles,
-  BottomLine,
-  Gradient,
-} from "../components/design/Hero";
+import { BackgroundCircles } from "../components/design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import PopupButton from "./PopupButton";
+import { heroIcons } from "../constants";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
-    <div className="relative bg-n-4 h-[50rem]" ref={parallaxRef}>
+    <div className="relative bg-n-2 h-[50rem]" ref={parallaxRef}>
       <img
         src={golfPlayer}
         className="absolute w-full h-full lg:max-w-[40rem] xl:max-w-[50rem] right-0 z-0 object-cover object-top"
       />
       <div className="relative pt-[5rem] z-1 mx-[5%] lg:mx-[10%]">
         <div className="max-w-[40rem] mt-[2rem] pt-[7.25rem] pb-10">
-          <p className="text-2xl text-green-800">Only hire the original and the best of</p>
+          <p className="text-2xl text-green-800">
+            Only hire the original and the best of
+          </p>
           <h1 className="text-6xl text-n-8">PORTABLE mini golf</h1>
-          <p className="text-2xl text-n-8">Come to us for the Portable Mini Golf Experience in Australia!</p>
+          <p className="text-2xl text-n-8">
+            Come to us for the Portable Mini Golf Experience in Australia!
+          </p>
         </div>
         <div className="relative flex gap-10">
           <RoundButton href="" className="text-n-8 hover:text-n-1">
@@ -42,6 +43,19 @@ const Hero = () => {
       </div>
       <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 mt-[7.25rem]">
         <BackgroundCircles />
+      </div>
+      <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
+        <ul className="gap-8 hidden md:flex">
+          {heroIcons.map((icon, index) => (
+            <li key={index} className="">
+              <img
+                src={golfbg}
+                className="object-cover w-[10rem] h-[10rem] lg:w-[15rem] lg:h-[15rem] rounded-2xl"
+                alt="Hero Background"
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
