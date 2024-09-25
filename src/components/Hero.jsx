@@ -16,12 +16,12 @@ const Hero = () => {
       />
       <div className="relative pt-[5rem] z-1 mx-[5%] lg:mx-[10%]">
         <div className="max-w-[40rem] mt-[2rem] pt-[7.25rem] pb-10">
-          <p className="text-2xl text-green-800">
+          <p className=" text-green-800 text-xl font-semibold">
             Only hire the original and the best of
           </p>
-          <h1 className="text-6xl text-n-8">PORTABLE mini golf</h1>
-          <p className="text-2xl text-n-8">
-            Come to us for the Portable Mini Golf Experience in Australia!
+          <h1 className="text-6xl text-n-5 font-bold pt-6">PORTABLE <br/>mini golf</h1>
+          <p className="text-xl text-n-5 pt-5">
+            Come to us for the Portable Mini Golf<br/> Experience in Australia!
           </p>
         </div>
         <div className="relative flex gap-10">
@@ -47,10 +47,10 @@ const Hero = () => {
       <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
   <ul className="gap-8 hidden md:flex w-full justify-center items-center">
     {heroIcons.map((icon, index) => (
-      <li key={index} className="bg-n-1 justify-center items-center w-full">
+      <li key={index} className="bg-n-1 justify-center items-center w-full shadow-md">
         <img
           src={icon.iconUrl}
-          className="object-cover w-15 h-15"
+          className="object-cover w-15 h-15 "
         />
         <div className="top-10 left-10 w-full h-full bg-n-1 opacity-0"></div>
         <div className="flex items-center justify-center p-2">
