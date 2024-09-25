@@ -45,23 +45,24 @@ const Hero = () => {
         <BackgroundCircles />
       </div>
       <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
-        <ul className="gap-8 hidden md:flex">
-          {heroIcons.map((icon, index) => (
-            <li key={index} className="relative">
-              <img
-                src={golfbg}
-                className="object-cover w-[10rem] h-[10rem] lg:w-[15rem] lg:h-[15rem] rounded-2xl"
-                alt="Hero Background"
-              />
-              <div className="absolute inset-0 flex items-center justify-center p-2">
-                <span className="text-white text-lg font-bold">
-                  {collabText}
-                </span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+  <ul className="gap-8 hidden md:flex w-full justify-center items-center">
+    {heroIcons.map((icon, index) => (
+      <li key={index} className="bg-n-1 justify-center items-center w-full">
+        <img
+          src={icon.iconUrl}
+          className="object-cover w-15 h-15"
+        />
+        <div className="top-10 left-10 w-full h-full bg-n-1 opacity-0"></div>
+        <div className="flex items-center justify-center p-2">
+          <span className="text-n-4 text-base font-normal items-center">
+            {icon.text}
+          </span>
+        </div>
+        
+      </li>
+    ))}
+  </ul>
+</div>
     </div>
   );
 };

@@ -65,11 +65,20 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import portable from "./portable.png";
+import qulity from "./qulity.png";
+import fun from "./fun.png";
+import aforadble from "./aforadble.png";
+
 export {
   logo,
   check,
   check2,
   loading1,
+  portable,
+  qulity,
+  fun,
+  aforadble,
   // brainwaveSymbol,
   logoSymbol,
   // brainwaveWhiteSymbol,
