@@ -4,12 +4,12 @@ import RoundButton from "../components/RoundButton";
 import { BackgroundCircles } from "../components/design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import PopupButton from "./PopupButton";
-import { heroIcons } from "../constants";
+import { collabText, heroIcons } from "../constants";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
-    <div className="relative bg-n-2 h-[50rem]" ref={parallaxRef}>
+    <div className="relative bg-n-16 h-[50rem] mb-[9.5rem]" ref={parallaxRef}>
       <img
         src={golfPlayer}
         className="absolute w-full h-full lg:max-w-[40rem] xl:max-w-[50rem] right-0 z-0 object-cover object-top"
@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="relative flex gap-10">
-          <RoundButton href="" className="text-n-8 hover:text-n-1">
+          <RoundButton href="" className="text-n-1 hover:text-n-8">
             Get Started
           </RoundButton>
           <RoundButton href="" white className="text-n-8 hover:text-n-14">
@@ -47,12 +47,17 @@ const Hero = () => {
       <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
         <ul className="gap-8 hidden md:flex">
           {heroIcons.map((icon, index) => (
-            <li key={index} className="">
+            <li key={index} className="relative">
               <img
                 src={golfbg}
                 className="object-cover w-[10rem] h-[10rem] lg:w-[15rem] lg:h-[15rem] rounded-2xl"
                 alt="Hero Background"
               />
+              <div className="absolute inset-0 flex items-center justify-center p-2">
+                <span className="text-white text-lg font-bold">
+                  {collabText}
+                </span>
+              </div>
             </li>
           ))}
         </ul>

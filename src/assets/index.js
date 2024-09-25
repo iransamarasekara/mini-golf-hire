@@ -23,6 +23,7 @@ import loading from "./loading.png";
 
 import golfPlayer from "./hero/golfPlayer.png";
 import golfbg from "./hero/golfbg.jpg";
+import golfball from "./hero/golfball.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -56,6 +57,7 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
+import benifitsBg from "./benefits/benifitsBg.jpg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -88,6 +90,7 @@ export {
   loading,
   golfPlayer,
   golfbg,
+  golfball,
   curve1,
   curve2,
   discord,
@@ -116,6 +119,7 @@ export {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  benifitsBg,
   discordBlack,
   facebook,
   instagram,

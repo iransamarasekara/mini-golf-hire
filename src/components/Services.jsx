@@ -7,7 +7,7 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Services = () => {
   return (
-    <div className="relative z-2 mx-[5%] lg:mx-[8%] mt-[9.5rem]">
+    <div className="relative z-2 mx-[5%] lg:mx-[8%] ">
       <Heading className="md:max-w-md lg:max-w-2xl" title="Our Services" />
 
       <div className="flex flex-wrap gap-10 mb-10 w-full justify-center">
