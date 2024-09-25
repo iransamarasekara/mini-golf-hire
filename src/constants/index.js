@@ -65,31 +65,35 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [{
-  id: "portable",
-  title: "Portable",
-  text: "Our mini golf courses are portable and can be set up anywhere.",
-  iconUrl: portable},
+export const heroIcons = [
+  {
+    id: "portable",
+    title: "Portable",
+    text: "Our mini golf courses are portable and can be set up anywhere.",
+    iconUrl: portable,
+  },
 
   {
-  id: "quality",
-  title: "Quality",
-  text: "We only use high-quality equipment and materials for our courses.",
-  iconUrl: qulity},
+    id: "quality",
+    title: "Quality",
+    text: "We only use high-quality equipment and materials for our courses.",
+    iconUrl: qulity,
+  },
 
   {
-
-  id: "fun",
-  title: "Fun",
-  text: "Our courses are designed to be fun and engaging for all ages.",
-  iconUrl: fun},
+    id: "fun",
+    title: "Fun",
+    text: "Our courses are designed to be fun and engaging for all ages.",
+    iconUrl: fun,
+  },
 
   {
-
-  id: "affordable",
-  title: "Affordable",
-  text: "We offer competitive prices for our mini golf courses.",
-  iconUrl: aforadble}];
+    id: "affordable",
+    title: "Affordable",
+    text: "We offer competitive prices for our mini golf courses.",
+    iconUrl: aforadble,
+  },
+];
 
 export const notificationImages = [notification4, notification3, notification2];
 
@@ -272,6 +276,35 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: golfbg,
+  },
+];
+
+export const special_benefits = [
+  {
+    id: "0",
+    title: "Corporate, Fundraising, and Domestic Event Support",
+    text: "We cater to a wide variety of events, from corporate functions to fundraising and private parties, ensuring a perfect mini golf experience for any occasion.",
+  },
+  {
+    id: "1",
+    title: "Custom-designed Mini Golf Courses for Hire",
+    text: "Our mini golf courses are designed with flexibility in mind, tailored to meet the specific needs of your event, whether it's a small gathering or a large festival.",
+  },
+  {
+    id: "2",
+    title: "Range of Course Options (1, 2, 4, 6, and 9-hole Courses)",
+    text: "We offer various course sizes to fit any space and event type, ensuring fun for both small and large groups.",
+  },
+  {
+    id: "3",
+    title: "Fun Variations: Chip Golf, Dual Golf, and Billiard Golf",
+    text: "Beyond traditional mini golf, we provide exciting variations like Chip Golf, Dual Golf, and even Billiard Golf, adding unique and creative twists to the game.",
+  },
+  {
+    id: "4",
+    title:
+      "Available Australia-wide through Our Network of Pre-qualified Agents",
+    text: "We provide our services across the country, using a reliable network of agents in all major metro areas to ensure timely delivery and setup for your event.",
   },
 ];
 

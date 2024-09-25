@@ -44,25 +44,26 @@ const Hero = () => {
       <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 mt-[7.25rem]">
         <BackgroundCircles />
       </div>
-      <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem]">
-  <ul className="gap-8 hidden md:flex w-full justify-center items-center">
-    {heroIcons.map((icon, index) => (
-      <li key={index} className="bg-n-1 justify-center items-center w-full">
-        <img
-          src={icon.iconUrl}
-          className="object-cover w-15 h-15"
-        />
-        <div className="top-10 left-10 w-full h-full bg-n-1 opacity-0"></div>
-        <div className="flex items-center justify-center p-2">
-          <span className="text-n-4 text-base font-normal items-center">
-            {icon.text}
-          </span>
-        </div>
-        
-      </li>
-    ))}
-  </ul>
-</div>
+      <div className="relative mx-[5%] lg:mx-[10%] pt-[7rem] lg:pt-[6.5rem] pr-20">
+        <ul className="gap-8 hidden md:flex">
+          {heroIcons.map((icon, index) => (
+            <li
+              key={index}
+              className="bg-n-1 items-center w-full text-center flex flex-col pt-4 shadow-md rounded-lg"
+            >
+              <img src={icon.iconUrl} className="object-cover w-15 h-15 " />
+              <h6 className="text-n-8 text-base font-bold items-center p-2">
+                {icon.title}
+              </h6>
+              <div className="flex items-center p-2">
+                <span className="text-n-4 text-base font-normal items-center">
+                  {icon.text}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
