@@ -1,5 +1,5 @@
 import React from "react";
-import { brainwave } from "../assets";
+import { logo } from "../assets";
 import { navigation, socials } from "../constants";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="bg-n-4 flex flex-col md:flex-row mx-[5%] lg:mx-[10%] mt-10 rounded-t-lg py-[2rem] gap-4 justify-center items-center">
         <div className="max-w-[16rem] md:max-w-[15rem] pt-5 w-full">
-          <img src={brainwave} width={190} height={40} alt="mini-golf-hire" />
+          <img src={logo} width={190} height={40} alt="mini-golf-hire" />
           <p className="text-xl md:text-xs font-semibold text-n-8 mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             officiis dolores molestias similique
