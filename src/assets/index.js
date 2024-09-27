@@ -70,6 +70,8 @@ import qulity from "./qulity.png";
 import fun from "./fun.png";
 import aforadble from "./aforadble.png";
 
+import golfball2 from "./golfball2.jpeg";
+
 export {
   logo,
   check,
@@ -134,4 +136,5 @@ export {
   instagram,
   telegram,
   twitter,
+  golfball2,
 };

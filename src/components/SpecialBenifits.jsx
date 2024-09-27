@@ -5,7 +5,7 @@ import { special_benefits } from "../constants";
 
 const SpecialBenifits = () => {
   return (
-    <div className="mx-[5%] lg:mx-[8%] relative">
+    <div className="px-[5%] lg:px-[8%] relative">
       <img
         src={benifitsBg}
         className="absolute top-0 left-0 w-full h-full object-cover object-top"
