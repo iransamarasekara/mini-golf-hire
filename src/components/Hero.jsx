@@ -9,10 +9,10 @@ import { collabText, heroIcons } from "../constants";
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
-    <div className="relative bg-n-16 h-[50rem] mb-[9.5rem]" ref={parallaxRef}>
+    <div className="relative bg-n-16 h-[50rem]" ref={parallaxRef}>
       <img
         src={golfPlayer}
-        className="absolute w-full h-full lg:max-w-[40rem] xl:max-w-[50rem] right-0 z-0 object-cover object-top"
+        className="absolute w-full h-full lg:max-w-[40rem] xl:max-w-[50rem] right-0 top-0 z-0 object-cover object-top"
       />
       <div className="relative pt-[5rem] z-1 mx-[5%] lg:mx-[10%]">
         <div className="max-w-[40rem] mt-[2rem] pt-[7.25rem] pb-10">
@@ -45,10 +45,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 mt-[7.25rem]">
+      <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 mt-[5.25rem]">
         <BackgroundCircles />
       </div>
-      <div className="relative mx-[5%] lg:mx-[10%] pt-[3rem] lg:pt-[2.5rem]">
+      <div className="relative mx-[5%] lg:mx-[10%] pt-[3rem] lg:pt-[2.5rem] max-w-[65rem]">
         <ul className="gap-8 hidden md:flex w-full">
           {heroIcons.map((icon, index) => (
             <li

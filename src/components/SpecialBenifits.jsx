@@ -14,7 +14,7 @@ const SpecialBenifits = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/50 to-black/50" />
       <Heading
         title="Why Choose Us?"
-        className="relative text-n-1 md:max-w-md lg:max-w-2xl pt-4 w-full flex justify-center"
+        className="relative text-n-1 md:max-w-md lg:max-w-2xl pt-12 pb-8 w-full flex justify-center"
       />
       <div className="relative max-w-[40rem] mx-auto">
         <p className="text-n-1 text-center">

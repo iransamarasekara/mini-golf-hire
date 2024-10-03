@@ -5,11 +5,11 @@ import RoundButton from "./RoundButton";
 
 const Experience = () => {
   return (
-    <div className="px-[5%] lg:px-[10%] flex w-full justify-center bg-n-17 pt-10 pb-10">
+    <div className="px-[5%] lg:px-[10%] flex w-full justify-center bg-n-17 pb-10 pt-[9.5rem]">
       <div className="relative">
         <img
           src={golfball2}
-          className="object-cover object-center h-[519px] w-[444px] rounded-3xl"
+          className="object-cover object-bottom h-[519px] w-[444px] rounded-3xl"
         />
         <div className="bg-n-14 absolute bottom-8 -right-28 flex flex-col items-center justify-center px-8 py-3">
           <p className="text-n-1 text-6xl font-bold">40+</p>

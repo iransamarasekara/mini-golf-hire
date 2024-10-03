@@ -35,6 +35,12 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import collaboration1 from "./collaboration/col1.png";
+import collaboration2 from "./collaboration/col2.png";
+import collaboration3 from "./collaboration/col3.png";
+import collaboration4 from "./collaboration/col4.png";
+import collaboration5 from "./collaboration/col5.png";
+import collaboration6 from "./collaboration/col6.png";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -58,6 +64,7 @@ import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benifitsBg from "./benefits/benifitsBg.jpg";
+import servicesIcon1 from "./benefits/servicesIcon1.png";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -112,6 +119,12 @@ export {
   protopie,
   raindrop,
   slack,
+  collaboration1,
+  collaboration2,
+  collaboration3,
+  collaboration4,
+  collaboration5,
+  collaboration6,
   lines,
   stars,
   done,
@@ -131,6 +144,7 @@ export {
   benefitIcon3,
   benefitIcon4,
   benifitsBg,
+  servicesIcon1,
   discordBlack,
   facebook,
   instagram,
