@@ -1,28 +1,46 @@
 import React from "react";
 import RoundButton from "./RoundButton";
+import Heading from "./Heading";
+import { golfball } from "../assets";
+import PopupButton from "./PopupButton";
 
 const JoinUs = () => {
   return (
-    <div className="lg:flex mx-[5%] lg:mx-[10%] mt-10">
-      <div className="max-w-[30rem]">
-        <div className="bg-n-8 p-4 text-n-1 border border-n-4 rounded-lg">
-          <h5 className="h5 mb-4 md:mb-8">Corporate Mini Golf Hire</h5>
-          <p>
-            With smart automation and top-notch security, it's the perfect
-            solution for teams looking to work smarter.
-          </p>
+    <div className="lg:flex mx-[5%] lg:mx-[10%] mt-10 relative">
+      <div className="md:max-w-[35rem] lg:max-w-[25rem] xl:max-w-[35rem] relative">
+        <div>
+          <Heading
+            className="md:max-w-md lg:max-w-2xl mb-4 text-n-14"
+            title="Join With Us"
+          />
+          <p>Are you passionate about creating fun, memorable experiences?</p>
         </div>
-        <div className="mt-2 bg-n-4 p-4 text-n-8 border border-n-4 rounded-lg">
+        <div className="text-n-2 mt-4">
           <p className="text-sm">
-            With smart automation and top-notch security, it's the perfect
-            solution for teams looking to work smarter.
+            Become part of the Mini Golf Hire team and help us bring fun and
+            excitement to events across Australia! As a valued agent, you'll
+            receive full training, support, and access to high-quality
+            equipment. Join our trusted, family-owned brand and be part of
+            delivering unforgettable experiences. <br />
+            Contact us today to learn more!
           </p>
         </div>
-        <RoundButton className="text-n-8 mt-3">Call now</RoundButton>
+        <RoundButton className="text-n-1 hover:text-n-8 mt-4">
+          Contact Us
+        </RoundButton>
       </div>
-      <div className="ml-auto">
-        <div className="relative w-[16rem] xl:w-[20rem] border border-n-6 h-[18rem] xl:h-[22rem] rounded-3xl left-1/3 sm:left-1/2 lg:left-0 bg-n-4" />
-        <div className="relative flex w-[14rem] xl:w-[18rem] aspect-square border border-n-6 rounded-full -translate-x-1/3 -translate-y-[80%] scale:75 md:scale-100 left-1/3 sm:left-1/2 lg:left-0"></div>
+      <div className="relative md:ml-[5rem]">
+        <img
+          src={golfball}
+          alt="golfball"
+          width={300}
+          height={300}
+          className="animate-pulse"
+        />
+        <PopupButton
+          className="w-[17rem] sm:w-[18rem] absolute top-1/2 left-1/4 lg:left-1/2"
+          title="Book Now"
+        />
       </div>
     </div>
   );
