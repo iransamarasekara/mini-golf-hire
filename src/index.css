@@ -157,7 +157,7 @@
   /* SHADCN COMPONENTS */
   /* Form */
   .shad-form_label {
-    @apply text-white !important;
+    @apply text-n-4 !important;
   }
 
   .shad-form_message {
@@ -169,7 +169,7 @@
   }
 
   .shad-textarea {
-    @apply h-36 bg-n-3 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-n-1 ring-offset-n-3 !important;
+    @apply h-36 bg-n-1 border border-n-2 rounded-xl focus-visible:ring-1 focus-visible:ring-n-1 ring-offset-n-3 !important;
   }
 
   /* Button */

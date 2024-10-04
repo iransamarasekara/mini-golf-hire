@@ -44,6 +44,8 @@ export default {
           18: "#f0d600",
           19: "#e7f6ec",
           20: "#32b57a",
+          21: "#f5f5f5",
+          22: "#e8e8e8",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

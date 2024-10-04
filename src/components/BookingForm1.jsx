@@ -5,14 +5,19 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "../components/ui/form";
 import { Input } from "../components/ui/input";
 
 import { Button } from "../components/ui/button";
+import { useNavigate } from "react-router-dom";
+import { useFormCompletion } from "@/context/FormCompletionContext";
+import { useEffect } from "react";
 
 const BookingForm1 = () => {
+  const navigate = useNavigate();
+  const { markFormAsCompleted, saveFormData, formData } = useFormCompletion();
+
   const form = useForm({
     defaultValues: {
       first_name: "",
@@ -22,8 +27,24 @@ const BookingForm1 = () => {
     },
   });
 
+  const { setValue } = form;
+
+  useEffect(() => {
+    if (formData.customer_details) {
+      const savedData = formData.customer_details;
+      for (let key in savedData) {
+        if (savedData.hasOwnProperty(key)) {
+          setValue(key, savedData[key]);
+        }
+      }
+    }
+  }, [formData.customer_details, setValue]);
+
   const onSubmit = (data) => {
     console.log(data);
+    saveFormData("customer_details", data);
+    markFormAsCompleted("customer_details");
+    navigate("/booknow/billing_details");
   };
 
   return (
@@ -38,6 +59,7 @@ const BookingForm1 = () => {
             <FormField
               control={form.control}
               name="first_name"
+              rules={{ required: "*First Name is required" }}
               render={({ field }) => (
                 <FormItem className="w-full">
                   <FormControl>
@@ -55,6 +77,7 @@ const BookingForm1 = () => {
             <FormField
               control={form.control}
               name="last_name"
+              rules={{ required: "*Last Name is required" }}
               render={({ field }) => (
                 <FormItem className="w-full">
                   <FormControl>
@@ -73,6 +96,7 @@ const BookingForm1 = () => {
           <FormField
             control={form.control}
             name="email"
+            rules={{ required: "*Email is required" }}
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -80,7 +104,7 @@ const BookingForm1 = () => {
                     type="email"
                     className="shad-input"
                     {...field}
-                    placeHolder={"Email Address"}
+                    placeholder="Email Address"
                   />
                 </FormControl>
 
@@ -91,6 +115,7 @@ const BookingForm1 = () => {
           <FormField
             control={form.control}
             name="contact_number"
+            rules={{ required: "*Contact Number is required" }}
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -98,7 +123,7 @@ const BookingForm1 = () => {
                     type="text"
                     className="shad-input max-w-[28rem]"
                     {...field}
-                    placeHolder={"Contact Number (Mobile)"}
+                    placeholder="Contact Number (Mobile)"
                   />
                 </FormControl>
 
