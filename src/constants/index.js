@@ -41,6 +41,9 @@ import {
   qulity,
   fun,
   aforadble,
+  americanexpress,
+  mastercard,
+  visa,
 } from "../assets";
 
 export const navigation = [
@@ -333,5 +336,38 @@ export const socials = [
     title: "Facebook",
     iconUrl: facebook,
     url: "#",
+  },
+];
+
+export const topbarLinks = [
+  {
+    route: "/booknow/customer_details",
+    label: "Customer Details",
+  },
+  {
+    route: "/booknow/billing_details",
+    label: "Billing Details",
+  },
+  {
+    route: "/booknow/event_details",
+    label: "Event Details",
+  },
+];
+
+export const paymentmethods = [
+  {
+    id: "0",
+    name: "visa",
+    iconUrl: visa,
+  },
+  {
+    id: "1",
+    name: "mastercard",
+    iconUrl: mastercard,
+  },
+  {
+    id: "2",
+    name: "americanexpress",
+    iconUrl: americanexpress,
   },
 ];

@@ -79,6 +79,15 @@ import aforadble from "./aforadble.png";
 
 import golfball2 from "./golfball2.jpeg";
 
+import booknowBG from "./booknow/bookingBG.png";
+import callIcon from "./booknow/call-icon.svg";
+import bookingHuman from "./booknow/bookingHuman.png";
+import downArrow from "./booknow/downArrow.png";
+import americanexpress from "./booknow/americanexpress.png";
+import mastercard from "./booknow/mastercard.png";
+import visa from "./booknow/visa.png";
+import calendar from "./booknow/calendar.png";
+
 export {
   logo,
   check,
@@ -151,4 +160,12 @@ export {
   telegram,
   twitter,
   golfball2,
+  booknowBG,
+  callIcon,
+  bookingHuman,
+  downArrow,
+  americanexpress,
+  mastercard,
+  visa,
+  calendar,
 };
