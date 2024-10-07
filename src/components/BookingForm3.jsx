@@ -15,6 +15,15 @@ import { useNavigate } from "react-router-dom";
 import { useFormCompletion } from "@/context/FormCompletionContext";
 import { useEffect } from "react";
 import CustomSelect from "./CustomSelect";
+import { Calendar as CalendarIcon } from "lucide-react";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
+import { format } from "date-fns";
 
 const BookingForm3 = () => {
   const navigate = useNavigate();
@@ -148,18 +157,34 @@ const BookingForm3 = () => {
                 name="date"
                 rules={{ required: "*Event Date is required" }}
                 render={({ field }) => (
-                  <FormItem className="w-full">
-                    <FormLabel className="shad-form_label">
-                      Event Date
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="date"
-                        className="shad-input w-full"
-                        {...field}
-                        placeholder="Set Date"
-                      />
-                    </FormControl>
+                  <FormItem className="flex flex-col">
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <FormControl>
+                          <Button
+                            variant={"outline"}
+                            className={cn(
+                              "w-[280px] pl-3 text-left font-normal shad-input",
+                              !field.value && "text-muted-foreground"
+                            )}
+                          >
+                            {field.value ? (
+                              format(field.value, "PPP")
+                            ) : (
+                              <span>Event Date</span>
+                            )}
+                            <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                          </Button>
+                        </FormControl>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="single"
+                          selected={field.value}
+                          onSelect={field.onChange}
+                        />
+                      </PopoverContent>
+                    </Popover>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -170,9 +195,6 @@ const BookingForm3 = () => {
                 rules={{ required: "*Start Time is required" }}
                 render={({ field }) => (
                   <FormItem className="w-full">
-                    <FormLabel className="shad-form_label">
-                      Start Time
-                    </FormLabel>
                     <FormControl>
                       <Input
                         type="time"
@@ -191,7 +213,6 @@ const BookingForm3 = () => {
                 rules={{ required: "*End Time is required" }}
                 render={({ field }) => (
                   <FormItem className="w-full">
-                    <FormLabel className="shad-form_label">End Time</FormLabel>
                     <FormControl>
                       <Input
                         type="time"
