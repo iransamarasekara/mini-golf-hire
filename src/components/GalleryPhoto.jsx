@@ -8,15 +8,15 @@ import golfball6 from "../assets/GalleryPhoto6.jpg";
 import golfball7 from "../assets/GalleryPhoto7.jpg";
 import golfball8 from "../assets/GalleryPhoto8.jpg";
 import golfball9 from "../assets/GalleryPhoto9.jpg";
-// import golfball10 from "../assets/GalleryPhoto10.jpg";
-// import golfball11 from "../assets/GalleryPhoto11.jpg";
-// import golfball12 from "../assets/GalleryPhoto12.jpg";
-// import golfball13 from "../assets/GalleryPhoto13.jpg";
-// import golfball14 from "../assets/GalleryPhoto14.jpg";
-// import golfball15 from "../assets/GalleryPhoto15.jpg";
-// import golfball16 from "../assets/GalleryPhoto16.jpg";
-// import golfball17 from "../assets/GalleryPhoto17.jpg";
-// import golfball1 from "../assets/GalleryPhoto18.jpg";
+import golfball10 from "../assets/GalleryPhoto10.jpg";
+import golfball11 from "../assets/GalleryPhoto11.png";
+import golfball12 from "../assets/GalleryPhoto12.jpg";
+import golfball13 from "../assets/GalleryPhoto13.jpg";
+import golfball14 from "../assets/GalleryPhoto14.jpg";
+import golfball15 from "../assets/GalleryPhoto15.jpg";
+import golfball16 from "../assets/GalleryPhoto16.jpg";
+import golfball17 from "../assets/GalleryPhoto17.jpg";
+import golfball18 from "../assets/GalleryPhoto18.jpg";
 
 const Gallery = () => {
   const galleryItems = [
@@ -29,9 +29,15 @@ const Gallery = () => {
     { name: "JEANE MYERS", image: golfball7 },
     { name: "JIM POWLAN", image: golfball8 },
     { name: "LOLLY SHERA", image: golfball9 },
-    { name: "CHERYL D. MCCLURE", image: "path-to-image.jpg" },
-    { name: "PENNY MICHEL", image: "path-to-image.jpg" },
-    { name: "MATTHEW X. CURRY", image: "path-to-image.jpg" },
+    { name: "CHERYL D. MCCLURE", image: golfball10 },
+    { name: "PENNY MICHEL", image: golfball11 },
+    { name: "MATTHEW X. CURRY", image: golfball12 },
+    { name: "MATTHEW X. CURRY", image: golfball13 },
+    { name: "MATTHEW X. CURRY", image: golfball14 },
+    { name: "MATTHEW X. CURRY", image: golfball15 },
+    { name: "MATTHEW X. CURRY", image: golfball16 },
+    { name: "MATTHEW X. CURRY", image: golfball17 },
+    { name: "MATTHEW X. CURRY", image: golfball18 },
   ];
 
   return (
