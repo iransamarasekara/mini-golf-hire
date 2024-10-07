@@ -14,8 +14,8 @@ const AboutUsHeader = () => {
     >
       <div className="absolute inset-0 bg-black opacity-25"></div> {/* Optional semi-transparent overlay */}
       <div className="max-w-5xl container mx-auto px-4 relative z-10"> {/* Set z-index for content */}
-        <h1 className="text-6xl font-bold mb-4">About Us</h1>
-        <p className="text-3xl text-lg">Home &gt; About Us</p>
+        <h1 className="text-6xl font-bold mb-4">Gallery</h1>
+        <p className="text-3xl text-lg">Home &gt; Gallery</p>
       </div>
     </div>
   );
