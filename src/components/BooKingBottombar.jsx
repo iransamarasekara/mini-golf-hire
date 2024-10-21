@@ -2,7 +2,7 @@ import { bookingHuman, booknowBG, callIcon } from "@/assets";
 import React from "react";
 
 const BooKingBottombar = () => {
-  return (
+  return (    
     <div className="relative w-full rounded-lg overflow-hidden mt-20">
       <img src={booknowBG} className="absolute w-full h-full object-cover" />
       <div className="relative flex justify-between">

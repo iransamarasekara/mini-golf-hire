@@ -10,6 +10,15 @@ import Footer from "./components/Footer";
 import BookingForm1 from "./components/BookingForm1";
 import BookingForm2 from "./components/BookingForm2";
 import BookingForm3 from "./components/BookingForm3";
+import Sydney from "./components/cities/Sydney"
+import Melbourne from "./components/cities/Melbourne"
+import Brisbane from "./components/cities/Brisbane"
+import Perth from "./components/cities/Perth"
+import Adelaide from "./components/cities/Adelaide"
+import Hobart from "./components/cities/Hobart"
+import Canberra from "./components/cities/Canberra"
+import Launceston from "./components/cities/Launceston"
+
 
 const App = () => {
   return (
@@ -33,6 +42,14 @@ const App = () => {
               />
               <Route path="/booknow/event_details" element={<BookingForm3 />} />
             </Route>
+            <Route path="/Sydney" element={<Sydney />} />
+            <Route path="/Melbourne" element={<Melbourne />} />
+            <Route path="/Brisbane" element={<Brisbane />} />
+            <Route path="/Perth" element={<Perth />} />
+            <Route path="/Adelaide" element={<Adelaide />} />
+            <Route path="/Hobart" element={<Hobart />} />
+            <Route path="/Canberra" element={<Canberra />} />
+            <Route path="/Launceston" element={<Launceston />} />
           </Routes>
         </div>
         <Footer className="mt-auto" />
